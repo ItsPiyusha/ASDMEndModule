@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Rahul Thakare (https://www.github.com/bantya)",
+    "author": "Piyusha Pawar (https://www.github.com/ItsPiyusha)",
     "license": "MIT",
     "dependencies": {
         "express": "^4.17.1"
