@@ -12,17 +12,17 @@ let logger = (req, resp, next)=>{
 }
 
 let sayhello = (req, resp) => {
-    resp.send("Hello world");
+    resp.send("This is 1179_Piyusha Pawar");
 }
 
 let saygreetings = (req, resp) => {
-    resp.send("Hello");
+    resp.send("GOOD EVENING!!!!");
 }
 
 app.use(logger);
 app.use('/greetings', saygreetings);
-app.use('/', sayhello);
+app.use('/hello', sayhello);
 
-app.listen(8081, () => {
-    console.log('Server is started on 8081')
+app.listen(8567, () => {
+    console.log('Server is started on 8567')
 })
