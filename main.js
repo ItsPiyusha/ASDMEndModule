@@ -4,7 +4,7 @@ let bodyparser = require('body-parser');
 
 app.use(bodyparser.urlencoded({extended: false}));
 
-let logger = function(req, resp, next){
+let logger = (req, resp, next)=>{
     console.log(req.url);
     console.log(req.method);
 
@@ -12,15 +12,15 @@ let logger = function(req, resp, next){
 }
 
 let sayhello = (req, resp) => {
-    resp.send("HEllo world");
+    resp.send("Hello world");
 }
 
-let saynamaste = (req, resp) => {
-    resp.send("Namaste India");
+let saygreetings = (req, resp) => {
+    resp.send("Hello");
 }
 
 app.use(logger);
-app.use('/namaste', saynamaste);
+app.use('/greetings', saygreetings);
 app.use('/', sayhello);
 
 app.listen(8081, () => {
